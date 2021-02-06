@@ -1,6 +1,6 @@
 <html>
  <head>
-
+   <title> The Covid Times </title>
    <!-- Required meta tags -->
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,9 @@
    rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
    crossorigin="anonymous">
 
-   <title> The Covid Times </title>
+   <!-- My CSS -->
+   <link rel="stylesheet" href="uottahack-style.css">
+
   </head>
   <body>
 
@@ -21,10 +23,18 @@
     integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
     crossorigin="anonymous"> </script>
 
-    <h1> THE COVID TIMES </h1>
-    <p> Stay Safe, Stay Informed. </p>
+    <h1 align="center"> The Covid Times </h1>
+    <p align="center" class="tagline"> Stay Safe, Stay Informed. </p>
+    <br>
+    <section align="center" class="mainlinks">
+    <a href="#about_section" class="pagelinks1">About</a>
+    <a href="#stats_section" class="pagelinks2">Latest Statistics</a>
+    <a href="#health_section" class="pagelinks3">Health & Safety</a>
+    <a href="#locate_section" class="pagelinks4">Locate & Learn</a>
+    </section>
     <br>
 
+    <div id="slider">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
       <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
@@ -33,13 +43,13 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="Pic1.jpg" class="d-block w-100" height="100%" width="25%">
+        <img src="Cov.jpg" class="d-block w-100" height="105%" width="25%">
       </div>
       <div class="carousel-item">
-        <img src="Pic2.png" class="d-block w-100" height="100%" width="25%">
+        <img src="Pic3.png" class="d-block w-100" height="105%" width="25%">
       </div>
       <div class="carousel-item">
-        <img src="Pic3.png" class="d-block w-100" height="100%" width="25%">
+        <img src="Pic1.jpg" class="d-block w-100" height="105%" width="25%">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
@@ -51,12 +61,13 @@
       <span class="visually-hidden">Next</span>
     </a>
     </div>
+    </div>
     <br>
 
 
   <div class="Static">
-    <section id="about">
-      <h4> ABOUT COVID-19 </h4>
+    <section class="about">
+      <h4> <a id="about_section">ABOUT</a> COVID-19 </h4>
       <p>COVID-19 is an infectious disease caused by a newly discovered coronavirus. The first case of this disease was
          detected in the city of Wuhan in Hubei province, China on the 31 December 2019. Later, on 11 March 2020 WHO
          declared this as a pandemic.</p>
@@ -70,17 +81,15 @@
          original virus. Some viruses mutate faster than others. However, SARS-CoV-2 changes slower compared to others
           such as Influenza. So far hundreds of variations of this virus have been identified.</p>
     </section>
-    <br>
 
-    <section id="statistics">
-      <h4> LATEST STATISTICS </h4>
+    <section class="statistics">
+      <h4> <a id ="stats_section">LATEST</a> STATISTICS </h4>
       <p> statistical information and latest records of covid19 </p>
     </section>
-    <br>
 
-    <section id="health">
-      <h4> HEALTH AND SAFETY </h4>
-      <h6> Symptoms </h6>
+    <section class="health">
+      <h4> <a id ="health_section">HEALTH</a> AND SAFETY </h4>
+      <p class="headings1"> Symptoms </p>
       <p>Below are some of the symptoms for COVID-19. Make sure to stay quarantined if you are experiencing the
         symptoms below and get tested! Seek medical assistance if required.
       <ul>
@@ -93,7 +102,7 @@
       	<li>Loss of taste or smell</li>
       	<li>Difficulty breathing</li>
       </ul> </p>
-      <h6> Precautions </h6>
+      <p class="headings2"> Precautions </p>
       <p>Follow the guidlines below to limit the spread of the virus.
       <ul>
       	<li>Sanitize your hands regularly</li>
@@ -107,12 +116,11 @@
         WHO Guidelines for the novel coronavirus </a>
       </p>
     </section>
-    <br>
   </div>
 
   <div class="Dynamic">
-    <section id="locate">
-      <h4> LOCATE AND LEARN </h4>
+    <section class="locate">
+      <h4><a id ="locate_section">LOCATE </a>AND LEARN </h4>
       <p> user interface, people enter their locations and get related info </p>
     </section>
   </div>
