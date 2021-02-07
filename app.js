@@ -5,7 +5,7 @@ window.onload = (response) => {
     fetch('https://disease.sh/v3/covid-19/all?yesterday=false&twoDaysAgo=true&allowNull=0')
     .then(response => response.json())
     .then(data => {
-        let output = '<h2>Covid Stats</h2>';
+        let output = '';
         output += '<ul>';
         output += `
             <li>Total Confirmed: ${data.cases}</li>
@@ -28,7 +28,7 @@ resultBtn.addEventListener('click', (e) => {
         // console.log(data.cases)
         console.log(data)
         
-        let output = '<h2>Covid Stats</h2>';
+        let output = '';
         output += '<ul>';
         output += `
             <li>Country: ${data.country}</li>
