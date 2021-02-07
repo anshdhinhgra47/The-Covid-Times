@@ -1,9 +1,14 @@
-// const fetchBtn = document.getElementById('fetchData');
+const inputVal = document.getElementById('country');
+const submitBtn = document.getElementById('submitBtn');
 
-window.onload = (response) => {
-    fetch('https://api.covid19api.com/summary')
+submitBtn.addEventListener('click', (e) => {
+    console.log(inputVal.value);
+    fetch(`https://api.covid19api.com/total/country/${inputVal.value}/status/confirmed`)
     .then(response => response.json())
     .then(data => {
+        console.log(data);
+    }
+        /* {
         let output = '<h2>Covid Stats</h2>';
         output += '<ul>';
         output += `
@@ -15,6 +20,8 @@ window.onload = (response) => {
         // console.log(data.Global.TotalConfirmed);
         console.log(data.Global);
     }
+    */
         );
-    // console.log('This Button works!');
-};
+    e.preventDefault();
+    inputVal.value = '';
+});
