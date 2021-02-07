@@ -1,1 +1,1 @@
-# uottahack_project
+# The-Covid-Times
